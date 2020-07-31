@@ -1,0 +1,181 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+.hsize img{
+    width:60%;
+}
+.vsize img{
+    height:250px;
+}
+.icon img{
+    height: 30px;
+}
+.container{
+    display: grid;
+    height: 125vh;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.2fr 0.2fr 0.5fr 0.5fr 0.4fr ;
+    grid-template-areas: 
+    "header header header"
+    "nav1    nav2    nav3"
+    "sociais sociais sociais" 
+    "sidebar content1 content2"
+    "sidebar content3 content4"
+    "footer  footer   footer";
+    
+    text-align: center;
+}
+header{
+    background: white;
+    grid-area: header;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    margin-bottom: 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
+#sociais{
+    background: white;
+    grid-area: sociais;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 5px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+}
+.fa {
+    padding: 1px;
+    margin-left: 3px;
+    font-size: 29px;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+}
+#nav1{
+    background: cadetblue;
+    grid-area: nav1;
+    padding:15px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -10px;
+}
+#nav1:hover{
+    background-color: darkcyan;
+}
+#nav1 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#nav2{
+    background: cadetblue;
+    grid-area: nav2;
+    padding:15px;
+    font-family: 'Roboto', sans-serif;
+}
+#nav2:hover{
+    background-color: darkcyan;
+}
+#nav2 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#nav3{
+    background: cadetblue;
+    grid-area: nav3;
+    padding:15px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: -10px;
+}
+#nav3:hover{
+    background-color: darkcyan;
+}
+#nav3 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#sidebar{
+    background: cadetblue;
+    grid-area: sidebar;
+    margin-left: -9px;
+    padding-top:var(--main-padding);
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+#sidebar img{
+    height: 175px;
+    text-align: center;
+}
+#content1{
+    background: white;
+    grid-area: content1;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+#content2{
+    background: white;
+    grid-area: content2;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+#content3{
+    background: white;
+    grid-area: content3;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+#content4{
+    background: white;
+    grid-area: content4;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+footer{
+    background: white;
+    grid-area: footer;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.2fr 0.4fr 0.2fr 2.5fr 2.5fr 2.5fr 2.5fr 0.8fr;
+        grid-template-areas: 
+        "header"
+        "sociais"
+        "nav"
+        "sidebar"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "footer";
+    }
+}
