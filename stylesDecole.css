@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: left;
+    height: 80px;
+    background: #e76f51;
+    font-size: 50px;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+nav{
+    display: flex;
+}
+nav a{
+    padding: 10px 0px;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    background: #f4a261;
+    color: black;
+    font-size: 20px;
+}
+nav a:hover{
+    opacity: 0.8;
+}
+nav{
+    margin-bottom: 160px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: white;
+    
+}
+.banner img{
+    width:800px;
+}
+.L1{
+    position: absolute;
+    top: 120px;
+    right: 400px;
+    font-size: 60px;
+    line-height: 50px;
+    font-family: 'Lemonada', cursive;
+    color: #e9724c;
+    text-align: left;
+}
+.L2{
+    position: absolute;
+    top: 220px;
+    right: 250px;
+    font-size: 60px;
+    line-height: 50px;
+    font-family: 'Lemonada', cursive;
+    color: #e9724c;
+    text-align: left;
+}
+.L3{
+    position: absolute;
+    top: 320px;
+    right: 100px;
+    font-size: 60px;
+    line-height: 50px;
+    font-family: 'Lemonada', cursive;
+    color: #e9724c;
+    text-align: left;
+}
+
+.Container{
+    display: grid;
+    height:400px;
+    grid-template-columns: 0.4fr 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "esp cnt1 esp1 cnt2 esp2 cnt3 esp3"
+    "esp txt1 esp1 txt2 esp2 txt3 esp3"
+    ;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.titulo{
+    font-family:'Noto Sans', sans-serif;
+}
+.corpo{
+    font-family:'Noto Sans JP', sans-serif;
+    text-align: left;
+}
+#cnt1{
+    grid-area: cnt1;
+    border-bottom: 1px solid rgba(10,4,4,0.5);
+    padding-bottom: 15px;
+}
+#txt1{
+    padding-top: 10px;
+    
+}
+#txt2{
+    padding-top: 10px;
+}
+#txt3{
+    padding-top: 10px;
+}
+#cnt2{
+    grid-area: cnt2;
+    border-bottom: 1px solid rgba(10,4,4,0.5);
+}
+#cnt3{
+    grid-area: cnt3;
+    border-bottom: 1px solid rgba(10,4,4,0.5);
+}
+#esp{
+    grid-area: esp;
+    background: white;
+}
+#esp1{
+    grid-area: esp1;
+    background: white;
+}
+#esp2{
+    grid-area: esp2;
+    background: white;
+}#esp3{
+    grid-area: esp3;
+    background: white;
+}
+.rodape{
+    background: #ffc857;
+    margin-bottom: 0px;
+    color: white;
+    
+}
+.rodape a{
+    text-decoration:none;
+    padding: 0px 2px; 
+}
+.wrapper{
+    margin-right: 15px;
+    text-align: center;
+    
+}
+.fa-facebook {
+    color: rgba(255, 255, 255, 0.925);
+}
+.fa-twitter {
+    color: rgba(255, 255, 255, 0.925);
+}
+.fa-instagram {
+    color: rgba(255, 255, 255, 0.925);
+}
+.fa-youtube {
+    color: rgba(255, 255, 255, 0.925);
+}
+/* CADASTRO */
+#nome{
+    width: 220px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    outline: none;
+}
+#email{
+    width: 220px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    outline: none;
+}
+#botao{
+    background-color: #37d43c;
+    color: white;
+    padding: 10px 15px ;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 170px;
+}
